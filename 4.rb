@@ -11,9 +11,7 @@ max = 0
 1.upto(999) do |n|
   (n).upto(999) do |m|
     x = m*n
-    if x > max && palindrome?(x)
-      max = x
-    end
+    max = x if x > max && palindrome?(x)
   end
 end
 
