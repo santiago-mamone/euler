@@ -9,7 +9,7 @@ b = 1
 result = 0
 
 while b < 4000000 do
-  result += b if b%2 == 0
+  result += b if b.even?
   a, b = b, a + b
 end
 
